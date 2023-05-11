@@ -1,6 +1,7 @@
 package com.yunusbalikci.notuygulamasi
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,7 +40,12 @@ class NotlarAdapter(private val mContext:Context,private val notlarListe:List<No
 
         holder.not_card.setOnClickListener {
 
+            val intent = Intent(mContext,DetayActivity::class.java)
+            intent.putExtra("nesne",not)
+            mContext.startActivity(intent)
+
         }
+
 
     }
 
