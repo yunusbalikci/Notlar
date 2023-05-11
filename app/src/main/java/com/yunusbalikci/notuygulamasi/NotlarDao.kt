@@ -35,7 +35,7 @@ class NotlarDao {
 
         val values = ContentValues()
         values.put("ders_adi",ders_adi)
-        values.put("no1",not1)
+        values.put("not1",not1)
         values.put("not2",not2)
 
         db.insertOrThrow("notlar",null,values)
@@ -47,7 +47,7 @@ class NotlarDao {
 
         val values = ContentValues()
         values.put("ders_adi",ders_adi)
-        values.put("no1",not1)
+        values.put("not1",not1)
         values.put("not2",not2)
 
         db.update("notlar",values,"not_id=?", arrayOf(not_id.toString()))
